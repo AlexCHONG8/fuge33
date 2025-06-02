@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troubleshooting | Summed Medtech</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <h1>Summed Medtech</h1>
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="zh">中文</button>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="overview.html" data-en="Overview" data-zh="概述">Overview</a></li>
+                    <li><a href="product_comparison.html" data-en="Product Comparison" data-zh="产品比较">Product Comparison</a></li>
+                    <li><a href="delivery_devices.html" data-en="Delivery Devices" data-zh="给药设备">Delivery Devices</a></li>
+                    <li><a href="injection_volumes.html" data-en="Injection Volumes" data-zh="注射剂量">Injection Volumes</a></li>
+                    <li><a href="needle_specs.html" data-en="Needle Specifications" data-zh="针头规格">Needle Specifications</a></li>
+                    <li><a href="troubleshooting.html" data-en="Troubleshooting" data-zh="故障排除">Troubleshooting</a></li>
+                    <li><a href="training.html" data-en="Training" data-zh="培训">Training</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="troubleshooting">
+        <div class="container">
+            <h2 data-en="Troubleshooting" data-zh="故障排除">Troubleshooting</h2>
+            <p data-en="Common issues and solutions for pen injectors and auto-injectors" data-zh="笔式注射器和自动注射器的常见问题和解决方案">
+                Common issues and solutions for pen injectors and auto-injectors
+            </p>
+
+            <div class="troubleshooting-section">
+                <h3 data-en="General Issues" data-zh="常见问题">General Issues</h3>
+                <div class="issue-card">
+                    <h4 data-en="Injection button won't press" data-zh="注射按钮无法按下">Injection button won't press</h4>
+                    <p><strong data-en="Possible causes:" data-zh="可能原因：">Possible causes:</strong> 
+                        <span data-en="Needle not properly attached, safety cap not removed, device not primed" 
+                              data-zh="针头未正确安装，安全帽未移除，设备未排气">Needle not properly attached, safety cap not removed, device not primed</span>
+                    </p>
+                    <p><strong data-en="Solution:" data-zh="解决方案：">Solution:</strong> 
+                        <span data-en="Ensure needle is properly attached, remove safety cap, prime device according to instructions" 
+                              data-zh="确保针头正确安装，移除安全帽，按照说明对设备进行排气">Ensure needle is properly attached, remove safety cap, prime device according to instructions</span>
+                    </p>
+                </div>
+                <div class="issue-card">
+                    <h4 data-en="Medication leakage" data-zh="药物泄漏">Medication leakage</h4>
+                    <p><strong data-en="Possible causes:" data-zh="可能原因：">Possible causes:</strong> 
+                        <span data-en="Needle not properly attached, injection button released too quickly" 
+                              data-zh="针头未正确安装，注射按钮释放过快">Needle not properly attached, injection button released too quickly</span>
+                    </p>
+                    <p><strong data-en="Solution:" data-zh="解决方案：">Solution:</strong> 
+                        <span data-en="Ensure needle is properly attached, hold injection button for 5-10 seconds after injection" 
+                              data-zh="确保针头正确安装，注射后保持按钮按下5-10秒">Ensure needle is properly attached, hold injection button for 5-10 seconds after injection</span>
+                    </p>
+                </div>
+                <div class="issue-card">
+                    <h4 data-en="No dose delivered" data-zh="未输送剂量">No dose delivered</h4>
+                    <p><strong data-en="Possible causes:" data-zh="可能原因：">Possible causes:</strong> 
+                        <span data-en="Device not primed, empty cartridge, mechanical failure" 
+                              data-zh="设备未排气，药筒为空，机械故障">Device not primed, empty cartridge, mechanical failure</span>
+                    </p>
+                    <p><strong data-en="Solution:" data-zh="解决方案：">Solution:</strong> 
+                        <span data-en="Prime device, check medication level, contact manufacturer if issue persists" 
+                              data-zh="对设备排气，检查药物量，如果问题持续请联系制造商">Prime device, check medication level, contact manufacturer if issue persists</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="troubleshooting-section">
+                <h3 data-en="Device-Specific Issues" data-zh="设备特定问题">Device-Specific Issues</h3>
+                <div class="device-tabs">
+                    <div class="tab">
+                        <button class="tablinks active" onclick="openDeviceTab(event, 'flexTouch')" 
+                                data-en="FlexTouch®" data-zh="FlexTouch®">FlexTouch®</button>
+                        <button class="tablinks" onclick="openDeviceTab(event, 'kwikPen')"
+                                data-en="KwikPen®" data-zh="KwikPen®">KwikPen®</button>
+                        <button class="tablinks" onclick="openDeviceTab(event, 'autoInjector')"
+                                data-en="Auto-Injector" data-zh="自动注射器">Auto-Injector</button>
+                    </div>
+
+                    <div id="flexTouch" class="tabcontent" style="display: block;">
+                        <h4 data-en="FlexTouch® Specific Issues" data-zh="FlexTouch® 特定问题">FlexTouch® Specific Issues</h4>
+                        <ul>
+                            <li><strong data-en="Dose selector stuck:" data-zh="剂量选择器卡住：">Dose selector stuck:</strong> 
+                                <span data-en="Gently rotate selector back and forth to loosen" 
+                                      data-zh="轻轻来回旋转选择器以松开">Gently rotate selector back and forth to loosen</span></li>
+                            <li><strong data-en="No click sound when injecting:" data-zh="注射时没有咔嗒声：">No click sound when injecting:</strong> 
+                                <span data-en="Ensure needle is properly attached and device is primed" 
+                                      data-zh="确保针头正确安装且设备已排气">Ensure needle is properly attached and device is primed</span></li>
+                            <li><strong data-en="Dose counter not moving:" data-zh="剂量计数器不动：">Dose counter not moving:</strong> 
+                                <span data-en="Contact manufacturer as device may be defective" 
+                                      data-zh="联系制造商，设备可能有缺陷">Contact manufacturer as device may be defective</span></li>
+                        </ul>
+                    </div>
+
+                    <div id="kwikPen" class="tabcontent">
+                        <h4 data-en="KwikPen® Specific Issues" data-zh="KwikPen® 特定问题">KwikPen® Specific Issues</h4>
+                        <ul>
+                            <li><strong data-en="Pen won't unlock:" data-zh="笔无法解锁：">Pen won't unlock:</strong> 
+                                <span data-en="Ensure green unlock button is fully pressed before turning" 
+                                      data-zh="在转动前确保绿色解锁按钮完全按下">Ensure green unlock button is fully pressed before turning</span></li>
+                            <li><strong data-en="Dose button hard to press:" data-zh="剂量按钮难以按下：">Dose button hard to press:</strong> 
+                                <span data-en="Check that needle is properly attached" 
+                                      data-zh="检查针头是否正确安装">Check that needle is properly attached</span></li>
+                            <li><strong data-en="Medication visible in window after injection:" data-zh="注射后窗口中可见药物：">Medication visible in window after injection:</strong> 
+                                <span data-en="Hold button for additional 5 seconds" 
+                                      data-zh="保持按钮按下额外5秒钟">Hold button for additional 5 seconds</span></li>
+                        </ul>
+                    </div>
+
+                    <div id="autoInjector" class="tabcontent">
+                        <h4 data-en="Auto-Injector Specific Issues" data-zh="自动注射器特定问题">Auto-Injector Specific Issues</h4>
+                        <ul>
+                            <li><strong data-en="Device doesn't activate when pressed against skin:" data-zh="按压皮肤时设备不激活：">Device doesn't activate when pressed against skin:</strong> 
+                                <span data-en="Ensure blue safety cap is removed" 
+                                      data-zh="确保蓝色安全帽已移除">Ensure blue safety cap is removed</span></li>
+                            <li><strong data-en="Second click not heard:" data-zh="未听到第二声咔嗒声：">Second click not heard:</strong> 
+                                <span data-en="Keep device pressed against skin for 10 seconds" 
+                                      data-zh="保持设备按压皮肤10秒钟">Keep device pressed against skin for 10 seconds</span></li>
+                            <li><strong data-en="Yellow indicator not visible after use:" data-zh="使用后黄色指示器不可见：">Yellow indicator not visible after use:</strong> 
+                                <span data-en="Contact manufacturer as dose may not have been delivered" 
+                                      data-zh="联系制造商，剂量可能未输送">Contact manufacturer as dose may not have been delivered</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="troubleshooting-section">
+                <h3 data-en="Error Messages" data-zh="错误信息">Error Messages</h3>
+                <table class="error-table">
+                    <thead>
+                        <tr>
+                            <th data-en="Error Code" data-zh="错误代码">Error Code</th>
+                            <th data-en="Description" data-zh="描述">Description</th>
+                            <th data-en="Resolution" data-zh="解决方法">Resolution</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>E1</td>
+                            <td data-en="Temperature out of range" data-zh="温度超出范围">Temperature out of range</td>
+                            <td data-en="Store device at recommended temperature (2-8°C/36-46°F)" 
+                                data-zh="将设备存放在推荐温度下 (2-8°C/36-46°F)">Store device at recommended temperature (2-8°C/36-46°F)</td>
+                        </tr>
+                        <tr>
+                            <td>E2</td>
+                            <td data-en="Mechanical error" data-zh="机械错误">Mechanical error</td>
+                            <td data-en="Contact manufacturer for replacement" 
+                                data-zh="联系制造商更换">Contact manufacturer for replacement</td>
+                        </tr>
+                        <tr>
+                            <td>E3</td>
+                            <td data-en="Dose not delivered" data-zh="剂量未输送">Dose not delivered</td>
+                            <td data-en="Check needle attachment and try again" 
+                                data-zh="检查针头连接并重试">Check needle attachment and try again</td>
+                        </tr>
+                        <tr>
+                            <td>E4</td>
+                            <td data-en="Device expired" data-zh="设备过期">Device expired</td>
+                            <td data-en="Use a new device" 
+                                data-zh="使用新设备">Use a new device</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Summed Medtech. All rights reserved.</p>
+            <p><small>Ozempic®, Wegovy®, and FlexTouch® are registered trademarks of Novo Nordisk A/S.</small></p>
+            <p><small>Mounjaro®, Zepbound®, and KwikPen® are registered trademarks of Eli Lilly and Company.</small></p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

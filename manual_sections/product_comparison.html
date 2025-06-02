@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Comparison | Summed Medtech</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <h1>Summed Medtech</h1>
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="zh">中文</button>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html" data-en="Overview" data-zh="概述">Overview</a></li>
+                    <li><a href="product_comparison.html" data-en="Product Comparison" data-zh="产品比较">Product Comparison</a></li>
+                    <li><a href="delivery_devices.html" data-en="Delivery Devices" data-zh="给药设备">Delivery Devices</a></li>
+                    <li><a href="injection_volumes.html" data-en="Injection Volumes" data-zh="注射剂量">Injection Volumes</a></li>
+                    <li><a href="needle_specs.html" data-en="Needle Specifications" data-zh="针头规格">Needle Specifications</a></li>
+                    <li><a href="troubleshooting.html" data-en="Troubleshooting" data-zh="故障排除">Troubleshooting</a></li>
+                    <li><a href="training.html" data-en="Training" data-zh="培训">Training</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="product-comparison">
+        <div class="container">
+            <h2 data-en="Product Comparison" data-zh="产品比较">Product Comparison</h2>
+            <p data-en="This section compares the key features of Semaglutide (Ozempic®, Wegovy®) and Tirzepatide (Mounjaro®, Zepbound®), focusing on dosing, injection volume, and device types."
+               data-zh="本节比较了Semaglutide（Ozempic®、Wegovy®）和Tirzepatide（Mounjaro®、Zepbound®）的关键特性，重点关注剂量、注射体积和设备类型。">
+               This section compares the key features of Semaglutide (Ozempic®, Wegovy®) and Tirzepatide (Mounjaro®, Zepbound®), focusing on dosing, injection volume, and device types.
+            </p>
+
+            <!-- Rest of product comparison content from original file -->
+            <table>
+                <thead>
+                    <tr>
+                        <th data-en="Product" data-zh="产品">Product</th>
+                        <th data-en="Active Ingredient" data-zh="活性成分">Active Ingredient</th>
+                        <th data-en="Available Doses" data-zh="可用剂量">Available Doses</th>
+                        <th data-en="Injection Volume" data-zh="注射体积">Injection Volume</th>
+                        <th data-en="Primary Packaging" data-zh="主要包装">Primary Packaging</th>
+                        <th data-en="Device Type" data-zh="设备类型">Device Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Novo Nordisk Products -->
+                    <tr>
+                        <td>Ozempic® 诺和泰® FlexTouch</td>
+                        <td>Semaglutide</td>
+                        <td>0.25, 0.5, 1, 2 mg/week</td>
+                        <td>0.19, 0.37, 0.74, 0.74 mL</td>
+                        <td>Prefilled Cartridge</td>
+                        <td>Pen Injector</td>
+                    </tr>
+                    <tr>
+                        <td>Wegovy® 维格维® FlexTouch</td>
+                        <td>Semaglutide</td>
+                        <td>0.25, 0.5, 1, 1.7, 2.4 mg/week</td>
+                        <td>0.37, 0.37, 0.74, 0.74, 0.74 mL</td>
+                        <td>Prefilled Cartridge</td>
+                        <td>Pen Injector</td>
+                    </tr>
+                    <tr>
+                        <td>Wegovy® 维格维® Auto-Injector</td>
+                        <td>Semaglutide</td>
+                        <td>0.25, 0.5, 1, 1.7, 2.4 mg/week</td>
+                        <td>0.5, 0.5, 0.75, 0.75, 0.75 mL</td>
+                        <td>Prefilled Syringe</td>
+                        <td>Auto Injector</td>
+                    </tr>
+
+                    <!-- Eli Lilly Products -->
+                    <tr>
+                        <td>Mounjaro® 蒙扎罗® KwikPen</td>
+                        <td>Tirzepatide</td>
+                        <td>2.5, 5, 7.5, 10, 12.5, 15 mg/week</td>
+                        <td>0.6 mL (all doses)</td>
+                        <td>Prefilled Cartridge</td>
+                        <td>Pen Injector</td>
+                    </tr>
+                    <tr>
+                        <td>Mounjaro® 蒙扎罗® Auto-Injector</td>
+                        <td>Tirzepatide</td>
+                        <td>2.5, 5, 7.5, 10, 12.5, 15 mg/week</td>
+                        <td>0.5 mL (all doses)</td>
+                        <td>Prefilled Syringe</td>
+                        <td>Auto Injector</td>
+                    </tr>
+                    <tr>
+                        <td>Zepbound® 泽博乐® Auto-Injector</td>
+                        <td>Tirzepatide</td>
+                        <td>2.5, 5, 7.5, 10, 12.5, 15 mg/week</td>
+                        <td>0.5 mL (all doses)</td>
+                        <td>Prefilled Syringe</td>
+                        <td>Auto Injector</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Auto-injector vs Injector</h3>
+            <div class="comparison-grid">
+                <div class="compare-card">
+                    <h4>Auto-injector</h4>
+                    <ul>
+                        <li>One-button activation</li>
+                        <!-- Rest of auto-injector points -->
+                    </ul>
+                </div>
+                <div class="compare-card">
+                    <h4>Injector</h4>
+                    <ul>
+                        <li>Manual dose setting (in some models)</li>
+                        <!-- Rest of pen injector points -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p data-en="&copy; 2025 Summed Medtech. All rights reserved." data-zh="&copy; 2025 森迈医疗科技 版权所有">&copy; 2025 Summed Medtech. All rights reserved.</p>
+            <p><small data-en="Ozempic®, Wegovy®, and FlexTouch® are registered trademarks of Novo Nordisk A/S." data-zh="Ozempic®、Wegovy®和FlexTouch®是诺和诺德公司的注册商标">Ozempic®, Wegovy®, and FlexTouch® are registered trademarks of Novo Nordisk A/S.</small></p>
+            <p><small data-en="Mounjaro®, Zepbound®, and KwikPen® are registered trademarks of Eli Lilly and Company." data-zh="Mounjaro®、Zepbound®和KwikPen®是礼来公司的注册商标">Mounjaro®, Zepbound®, and KwikPen® are registered trademarks of Eli Lilly and Company.</small></p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
