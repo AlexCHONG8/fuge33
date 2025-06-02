@@ -1,0 +1,356 @@
+/* Language Selector Styles */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.language-selector {
+    display: flex;
+    gap: 10px;
+}
+
+.lang-btn {
+    padding: 5px 10px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.lang-btn.active,
+nav ul li a.active {
+    background: white;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #02277F; /* Summed Medtech deep blue */
+    --secondary-color: #E6EBF5;
+    --novo-color: #00A0DF; /* Novo Nordisk blue */
+    --lilly-color: #DC143C; /* Eli Lilly red */
+    --white: #FFFFFF;
+    --light-gray: #f4f4f4;
+    --dark-gray: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero {
+    background: var(--secondary-color);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.hero h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+section {
+    padding: 3rem 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    font-size: 1.75rem;
+}
+
+section h3 {
+    color: var(--primary-color);
+    margin: 1.5rem 0 1rem 0;
+    font-size: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+tr:nth-child(even) {
+    background-color: var(--secondary-color);
+}
+
+.comparison-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.compare-card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+}
+
+.compare-card h4 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.compare-card ul {
+    list-style: disc inside;
+}
+
+.key-points {
+    list-style: disc inside;
+    max-width: 700px;
+    margin: 1rem auto;
+    padding-left: 20px;
+}
+
+.key-points li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.image-card {
+    background: var(--white);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.image-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+.product-card {
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.product-header {
+    padding: 1rem;
+    color: var(--white);
+}
+
+.novo-header {
+    background-color: var(--novo-color);
+}
+
+.lilly-header {
+    background-color: var(--lilly-color);
+}
+
+.product-body {
+    padding: 1.5rem;
+}
+
+.product-specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.spec-item {
+    background: var(--secondary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.placeholder-image {
+    background-color: #ddd;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.device-comparison {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.device-card {
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.device-image {
+    height: 200px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.device-image img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.device-details {
+    padding: 1.5rem;
+}
+
+.device-details h4 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.device-specs {
+    margin-top: 1rem;
+}
+
+.device-specs li {
+    margin-bottom: 0.5rem;
+    list-style-position: inside;
+}
+
+.injection-volume {
+    background: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.injection-volume h3 {
+    margin-top: 0;
+}
+
+.needle-specs {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+}
+
+.troubleshooting {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+}
+
+.troubleshooting h3 {
+    margin-top: 0;
+}
+
+.troubleshooting-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.troubleshooting-item {
+    background: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.troubleshooting-item h4 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
